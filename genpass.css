@@ -34,7 +34,25 @@
         color: #000000;
         margin-left: 5px;
     }
-    input {
+
+    #passwordLength{
+      position: absolute;
+      margin-top: -18px;
+      margin-left: 120px;
+      border-radius: 6px;
+      border: none;
+      border: 2px solid #000000;
+      outline: none;
+      width: 55px;
+      height: 23px;
+
+    }
+
+    #textLength{
+      position: absolute;
+      margin-top: -15px;
+    }
+    #password {
         padding: 15px;
         user-select: none;
         height: 35px;
@@ -80,13 +98,14 @@
       height: 280px;
       width: 450px;
     }
-    input{
+    #password{
       height: 40px;
       width: 400px;
       margin-top: 0px;
       margin-left: -5px;
       font-size: 22px;
     }
+
     #button{
       font-size: 15px;
       width: 155px;

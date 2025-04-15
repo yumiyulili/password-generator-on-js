@@ -2,11 +2,12 @@ const pass = document.getElementById("password");
 
 function genPassword() {
     const chars = "0123456789abcdefghijklmnopqrstuvwxyz_-()ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-    const passwordLength = 12;
+    const passwordLength = document.getElementById("passwordLength").value;
+
     let password = "";
- for (let i = 0; i <= passwordLength; i++) {
+ for (let i = 0; i < passwordLength; i++) {
    let randomNumber = Math.floor(Math.random() * chars.length);
-   password += chars.substring(randomNumber, randomNumber +1);
+   password += chars[randomNumber];
   }
         document.getElementById("password").value = password;
  }
