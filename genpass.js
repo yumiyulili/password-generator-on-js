@@ -9,6 +9,14 @@ function genPassword() {
    let randomNumber = Math.floor(Math.random() * chars.length);
    password += chars[randomNumber];
   }
+  if (passwordLength > 20){
+    alert("Error! Max characters:20")
+    return
+   }
+   else if(passwordLength < 6){
+    alert("Error! Min characters:6")
+    return
+   }
         document.getElementById("password").value = password;
  }
 
